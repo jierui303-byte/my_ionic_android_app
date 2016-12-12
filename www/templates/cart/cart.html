@@ -1,0 +1,64 @@
+<ion-view title="购物车">
+
+  <!--头部 开始-->
+  <div class="bar bar-header">
+    <a class="button icon-left ion-chevron-left button-clear button-dark" ng-click="goBack()"></a>
+    <h1 class="title">购物车</h1>
+    <a class="button icon-left ion-chevron-left button-clear button-dark ion-navicon-round"></a>
+  </div>
+  <!--头部 结束-->
+
+
+  <ion-content class="has-header has-footer">
+
+    <!--列表-->
+    <ion-list show-delete="shouldShowDelete" show-reorder="shouldShowReorder" can-swipe="listCanSwipe">
+      <ion-item ng-repeat="item in items"
+                class="item-thumbnail-left cartItem">
+        <img ng-src="{{item.img}}">
+        <h2 class="cartH2Title">{{item.title}}</h2>
+        <p>{{item.description}}</p>
+        <h2 class="cartH2">&yen;{{item.price}}</h2>
+        <h2 class="cartNumH2"><span>-</span><span>1222</span><span>+</span></h2>
+
+        <ion-checkbox ng-model="isChecked" class="cartCheck"></ion-checkbox>
+
+        <ion-option-button class="button-positive"
+                           ng-click="share(item)">
+          分享
+        </ion-option-button>
+        <ion-option-button class="button-info"
+                           ng-click="edit(item)">
+          编辑
+        </ion-option-button>
+        <ion-delete-button class="ion-minus-circled"
+                           ng-click="items.splice($index, 1)">
+        </ion-delete-button>
+        <ion-reorder-button class="ion-navicon"
+                            on-reorder="reorderItem(item, $fromIndex, $toIndex)">
+        </ion-reorder-button>
+
+      </ion-item>
+    </ion-list>
+
+
+
+
+
+  </ion-content>
+
+
+  <!--尾部-->
+  <div class="bar bar-footer tabs tabs-icon-left J-row J-nopadding jiesuan" style="background: #fff;">
+    <ion-checkbox ng-model="isChecked" class="J-nopadding quanxuan">全选</ion-checkbox>
+    <div class="col col-50 heji">
+      <h5>合计: &yen;0.00</h5>
+      <h6>总额:&yen;0.00 立减: &yen;0.00</h6>
+    </div>
+    <button class="button col button-positive Jcolor2">去结算(0)</button>
+  </div>
+
+
+
+
+</ion-view>

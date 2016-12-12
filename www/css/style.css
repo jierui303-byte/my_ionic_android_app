@@ -1,0 +1,420 @@
+/* Empty. Add your own CSS if you like */
+
+/*公共样式*/
+.J-left{
+  float:left;
+}
+.J-right{
+  float:right;
+}
+.J-clearboth{
+  clear:both;
+}
+.J-nopadding{
+  padding:0;
+}
+/*.item{*/
+  /*padding:0;*/
+/*}*/
+
+
+
+/*头部 开始*/
+.bar.J-bar-light{
+  background: #c91523;
+}
+.bar.J-bar-light{
+  background: transparent;
+}
+.J-bar-light .J-blogo{
+  width: 60px;
+  height: 21px;
+  background: url("../img/jd-sprites.png") no-repeat 0 -105px;
+  background-size: 200px 200px;
+  margin-right: 9px;
+  border:1px solid #c91523;
+}
+.J-bar-light .J-blogo{
+  width: 60px;
+  height: 21px;
+  background: url("../img/jd-sprites.png") no-repeat 0 -105px;
+  background-size: 200px 200px;
+  margin-right: 9px;
+  border:1px solid transparent;
+}
+.bar.item-input-inset .J-topSearch{
+  border-radius:40px;
+  background: #fff;
+}
+.bar-light .button.J-denglu{
+  color:#fff;
+}
+/*头部结束*/
+
+
+/*滑动框 开始*/
+.box{
+  height: 260px;
+}
+.blue{
+  background:blue;
+}
+.yellow{
+  background: yellow;
+}
+.pink{
+  background: pink;
+}
+.red{
+  background: red;
+}
+.orange{
+  background: orange;
+}
+.J-ion-slide-box img{
+  max-width: 100%;
+}
+/*滑动框 结束*/
+
+
+
+/*nav导航列表 开始*/
+.J-nav{
+  background: #f3f3f3;
+  overflow: hidden;
+}
+.J-nav .col-20{
+  float:left;
+  text-align: center;
+  background: #f3f3f3;
+
+  /*width:20%;*/
+}
+.J-nav .col a{
+  text-decoration: none;
+  color:#000000;
+}
+.J-nav .col a img{
+  max-width: 100%;
+}
+.J-nav .col p{
+  font-size: 12px;
+}
+/*nav导航列表 结束*/
+
+
+
+/*京东快报 开始*/
+.row.J-row{
+  background: red;
+  height: 50px;
+  padding:0;
+}
+.row.J-row .col-80, .row.J-row .col-20{
+  height: 30px;
+  background: olive;
+  padding:0;
+}
+.J-row a{
+  display:inline-block;
+  background: #fff;
+  height: 30px;
+}
+.J-row a img{
+  position:relative;
+  top:3px;
+  max-width: 100%;
+}
+.J-row .J-list{
+  height: 30px;
+  overflow: hidden;
+}
+.J-row .J-list .J-list-span{
+  display: inline-block;
+  color:#c91523;
+  margin-right: 5px;
+  font-size: 13px;
+}
+.J-row .J-list li{
+  padding:6px;
+  font-size: 14px;
+  border:none;
+  text-overflow: ellipsis;
+}
+.J-more{
+  height: 30px;
+  line-height: 30px;
+  color:#4d4d4d;
+}
+.J-more::before{
+  content:'';
+  display:inline-block;
+  width:1px;
+  height: 15px;
+  background: #ececec;
+  margin-right: 10px;
+  position:relative;
+  top:3px;
+}
+/*京东快报 结束*/
+
+
+
+/*为您推荐 开始*/
+.J-homeList .col{
+  float:left;
+}
+.J-homeList .item-thumbnail-left, .J-homeList .item-thumbnail-left .item-content {
+  padding-top: 0;
+  padding-left: 0;
+  min-height: 100px;
+}
+
+
+.J-homeList .item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .J-homeList .item-thumbnail-left .item-content > img:first-child, .J-homeList .item-thumbnail-left .item-content .item-image {
+  position: relative;
+  top:0;
+  left:0;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.J-homeList .item {
+  padding:0 0 0 0;
+}
+.J-homeList .J-item-thumbnail-left h2{
+  height: 33px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  padding-left: 3px;
+}
+.J-homeList .item p{
+  color:#f23030;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 3px;
+}
+.J-homeList .item p span{
+  float:right;
+  display:inline-block;
+  border:1px solid #bfbfbf;
+  padding:2px 5px;
+  font-size: 12px;
+  color:#686868;
+  position: relative;
+  top:-5px;
+  right:5px;
+}
+/*为您推荐 结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*goods商品页*/
+
+.tabs-top > .tabs, .tabs.tabs-top{
+  top:0;
+}
+.goodsH{
+  height: 320px;
+}
+.goodsH img{
+  max-width: 100%;
+}
+.gt h2{
+  font-size:15px;
+  padding:5px;
+}
+.gtt{
+  overflow: hidden;
+}
+.gtt a:nth-of-type(1){
+  float:left;
+  margin-left: 5px;
+  font-size: 20px;
+  color:#f23030;
+}
+.gtt a:nth-of-type(2){
+  float:right;
+  margin-right: 5px;
+  border:1px solid #e1e1e0;
+  padding:2px 3px;
+}
+.gtd{
+  padding:0 5px;
+  color:#81838e;
+  font-size: 13px;
+}
+.J-block{
+  display: block;
+}
+.J-gi:before {
+  margin-bottom: 0;
+  padding: 0;
+  display: block;
+  font-size: 23px;
+}
+.J-gi{
+  padding:0;
+  line-height: 20px;
+  min-width:30%;
+  font-size: 13px;
+  border-radius: 0;
+}
+.button.button-positive{
+  float:left;
+}
+.button.button-positive {
+  border-color: transparent;
+  color: #fff;
+}
+.button.button-positive.Jcolor1{
+  width: 50%;
+  background: #ffb03f;
+  border-radius: 0;
+  font-weight: 800;
+}
+.button.button-positive.Jcolor2{
+  width: 50%;
+  background: #f23030;
+  border-radius: 0;
+  font-weight: 800;
+}
+
+.col-50{
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*购物车页 开始*/
+.cartH2{
+  color:#f23030;
+}
+.cartItem{
+  position: relative;
+}
+.item-thumbnail-left.cartItem .item-content > img:first-child{
+  left:50px;
+}
+.item-thumbnail-left.cartItem .item-content {
+  padding-top: 8px;
+  padding-left: 136px;
+  min-height: 100px;
+}
+.cartNumH2{
+  position:absolute;
+  right:10px;
+  bottom:2px;
+  padding:2px;
+}
+.cartNumH2 span{
+  display: inline-block;
+  /*width:30px;*/
+  padding:0 5px;
+  /*height: 30px;*/
+  /*line-height: 30px;*/
+  /*text-align: center;*/
+  border:1px solid #e1e1e0;
+}
+.cartNumH2 span:nth-of-type(2){
+  min-width: 30px;
+}
+
+.cartCheck{
+  width:50px;
+  height: 102px;
+  position:absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+}
+
+.item-checkbox {
+   padding-left: 0;
+}
+.item-thumbnail-left.item-complex {
+  padding-top: 0;
+  padding-left: 0;
+  margin: 5px 0;
+}
+.item-complex .item-content, .item-radio .item-content {
+  position: relative;
+  z-index: 2;
+  padding: 16px 10px 16px 16px;
+  border: none;
+  background-color: #fff;
+}
+.item-thumbnail-left.cartItem .cartH2Title{
+  height: 33px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+
+/*全选*/
+.quanxuan.item-checkbox {
+  padding-left: 45px;
+  padding-top: 19px;
+  font-size: 12px;
+  width:25%;
+  border:none;
+}
+.heji h5, .heji h6{
+  margin:0;
+  padding:3px;
+}
+.jiesuan{
+  position:fixed;
+  left:0;
+  bottom:48px;
+  z-index: 6;
+}
+/*购物车页 结束*/
+
+
+
+
+
+
+
+/*分类*/
+.item{
+  font-size: 12px;
+}
+.myFenlei{
+  position: fixed;
+}
+.scrollList{
+  height: 594px;
+}
